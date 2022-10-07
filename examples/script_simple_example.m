@@ -1,7 +1,7 @@
 %% This script shows a simple application of our method.
 
 % Define the problem (in this case "Crescent" from Kiwiel (1985))
-addpath(fullfile(cd,'..','test_funs\H2004lib\Chained_Crescent_I'));
+addpath(fullfile(cd,'..','test_funs/H2004lib/Chained_Crescent_I'));
 problem_config.n = 2;
 problem_config.x0 = [-1.5;2];
 problem_config.f = @(x) crescent_I(x);
