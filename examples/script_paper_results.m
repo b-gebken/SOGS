@@ -86,5 +86,5 @@ disp(['Benchmark completed in ',num2str(bench_time/60),' minutes.'])
 %% Display the result
 
 subgrad_eval = cellfun(@(in) sum(in),{SOGS_output.numsample_arr});
-results_table = table((1:num_problems)',subgrad_eval',[SOGS_output.final_f]','VariableNames',{'Problem','Evaluations','Final value'});
+results_table = table((1:num_problems)',subgrad_eval',[SOGS_output.final_f]','VariableNames',{'Problem','Evaluations','Final_value'});
 disp(results_table)
