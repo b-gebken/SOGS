@@ -44,7 +44,7 @@ while(exitflag <= 0)
     end
     
     if(exitflag <= 0)
-        disp(['Warning: Direction finding failed (attempt ',num2str(attempt_counter),'), retrying with random starting point (flag = ',num2str(exitflag),', ||z|| = ',num2str(norm(sol(1:n) - x0,2)),', eps = ',num2str(eps),').'])
+        disp(['Warning: Subproblem solution failed (attempt ',num2str(attempt_counter),'), retrying with random starting point (flag = ',num2str(exitflag),', ||z|| = ',num2str(norm(sol(1:n) - x0,2)),', eps = ',num2str(eps),').'])
         rand_flag = true;
     end
 end
