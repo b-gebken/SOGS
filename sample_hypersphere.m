@@ -5,7 +5,7 @@ function pts = sample_hypersphere(n,N)
 
     pts(:,1) = zeros(n,1);
 
-    tmp = 2*rand(n,N-1)-1;
+    tmp = randn(n,N-1);
     tmp = tmp./vecnorm(tmp,2,1);
     pts(:,2:N) = (rand(1,N-1).^(1/n)).*tmp;
     
