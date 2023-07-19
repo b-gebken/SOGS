@@ -10,8 +10,8 @@ function [y,I] = problem24(x)
         tmp(i) = abs(2*x(i) + 10/((n+1)^2)*sinh(10*x(i)) - x(i-1) - x(i+1));
         I(i) = sign(2*x(i) + 10/((n+1)^2)*sinh(10*x(i)) - x(i-1) - x(i+1));
     end
-    tmp(n) = abs(2*x(n) + 10/((n+1)^2)*sinh(10*x(n)) - x(n-1));
-    I(n) = sign(2*x(n) + 10/((n+1)^2)*sinh(10*x(n)) - x(n-1));
+    tmp(n) = abs(2*x(n) + 10/((n+1)^2)*sinh(10*x(n)) - x(n-1) - 1);
+    I(n) = sign(2*x(n) + 10/((n+1)^2)*sinh(10*x(n)) - x(n-1) - 1);
     
     
     [y,i] = max(tmp,[],1);
